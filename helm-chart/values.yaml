@@ -7,6 +7,7 @@ global: {}
 node01:
    enabled: true
    image: surakshaniveus/ms-node01:03
+   version:
     # repository: surakshaniveus/ms-node01
     # tag: "03"
    
@@ -14,6 +15,7 @@ node01:
 python01:
   enabled: true
   image: surakshaniveus/ms-python01:02
+  version:
     # repository: surakshaniveus/ms-python01
     # tag: "02"
    
@@ -21,6 +23,7 @@ python01:
 gradle-sample-app:
   enabled: true
   image: surakshaniveus/ms-java01:02
+  version:
     # repository: surakshaniveus/ms-java01
     # tag: "02"
    
