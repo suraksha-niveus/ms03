@@ -1,0 +1,94 @@
+# replicaCount: 1
+
+# image:
+#   repository: nginx
+#   pullPolicy: IfNotPresent
+#   # Overrides the image tag whose default is the chart appVersion.
+#   tag: ""
+
+# imagePullSecrets: []
+# nameOverride: ""
+# fullnameOverride: ""
+
+# serviceAccount:
+
+#   create: true
+ 
+#   annotations: {}
+ 
+#   name: ""
+
+# podAnnotations: {}
+
+# podSecurityContext: {}
+ 
+# securityContext: {}
+  
+
+# service:
+#   type: ClusterIP
+#   port: 80
+
+# ingress:
+#   enabled: false
+#   className: ""
+#   annotations: {}
+  
+#   hosts:
+#     - host: chart-example.local
+#       paths:
+#         - path: /
+#           pathType: ImplementationSpecific
+#   tls: []
+ 
+
+# resources: {}
+ 
+
+# autoscaling:
+#   enabled: false
+#   minReplicas: 1
+#   maxReplicas: 100
+#   targetCPUUtilizationPercentage: 80
+  
+# nodeSelector: {}
+
+# tolerations: []
+
+# affinity: {}
+
+
+
+
+# enabled: true
+# image:
+#   repository: surakshaniveus/ms-java01
+#   pullPolicy: Always
+#   tag: "  02"
+
+
+
+
+
+### Global Values if any ###
+global: {}
+
+### Sub Charts Specific Values ###
+# node 
+node01:
+enabled: true
+  image:
+    repository: surakshaniveus/ms-node01
+    tag: "03"
+#python
+python01:
+enabled: true
+  image:
+    repository: surakshaniveus/ms-python01
+    tag: "02"
+#java
+gradle-sample-app:
+enabled: true
+  image:
+    repository: surakshaniveus/ms-java01
+    tag: "02"
