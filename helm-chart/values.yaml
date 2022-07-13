@@ -5,22 +5,22 @@ global: {}
 # node 
 
 node01:
-enabled: true
-image:
-    repository: surakshaniveus/ms-node01
-    tag: "03"
+   enabled: true
+   image: surakshaniveus/ms-node01:03
+    # repository: surakshaniveus/ms-node01
+    # tag: "03"
    
 #python
 python01:
-enabled: true
-image:
-    repository: surakshaniveus/ms-python01
-    tag: "02"
+  enabled: true
+  image: surakshaniveus/ms-python01:02
+    # repository: surakshaniveus/ms-python01
+    # tag: "02"
    
 #java
 gradle-sample-app:
-enabled: true
-image:
-    repository: surakshaniveus/ms-java01
-    tag: "02"
+  enabled: true
+  image: surakshaniveus/ms-java01:02
+    # repository: surakshaniveus/ms-java01
+    # tag: "02"
    
