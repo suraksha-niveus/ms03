@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: surakshaniveus/ms-node01
+  repository: nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "03"
+  tag: ""
 
 imagePullSecrets: []
 nameOverride: ""
