@@ -5,13 +5,15 @@ type: application
 version: 0.1.0
 dependencies:
   - name: node01
-    repository: file://charts/node01
-    version: 0.1.0
+    condition: node01.enabled
+    # repository: file://charts/node01
+    # version: 0.1.0
   - name: python01
     condition: python01.enabled
-    repository: file://charts/python01
-    version: 0.1.0
+    # condition: python01.enabled
+    # repository: file://charts/python01
+    # version: 0.1.0
   - name: gradle-sample-app
     condition: gradle-sample-app.enabled
-    repository: file://charts/gradle-sample-app
-    version: 0.1.0
+    # repository: file://charts/gradle-sample-app
+    # version: 0.1.0
