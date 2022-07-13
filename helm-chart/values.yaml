@@ -3,23 +3,24 @@ global: {}
 
 ### Sub Charts Specific Values ###
 # node 
+
 node01:
 enabled: true
-  image:
+image:
     repository: surakshaniveus/ms-node01
     tag: "03"
-    version:
+   
 #python
 python01:
 enabled: true
-  image:
+image:
     repository: surakshaniveus/ms-python01
     tag: "02"
-    version:
+   
 #java
 gradle-sample-app:
 enabled: true
-  image:
+image:
     repository: surakshaniveus/ms-java01
     tag: "02"
-    version:
+   
